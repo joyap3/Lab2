@@ -27,26 +27,34 @@ public class Main {
         }*/
         userNum = scanner.nextInt();
 
-        if ((userNum % 2 == 0) && ((userNum >= 2) && (userNum <= 25)))
+        if ((userNum % 2 != 0) && ((userNum < 60))) {
+            System.out.println("You entered: " + userNum + " which is an Odd number.");
+        }
+
+        if
+                ((userNum % 2 == 0) && ((userNum >= 2) && (userNum <= 25))) {
             System.out.println("Your number is even and less than 25");
-
+        }
 
         if
-            ((userNum % 2 == 0) && ((userNum > 26) && (userNum < 60)))
+                ((userNum % 2 == 0) && ((userNum > 26) && (userNum < 60))) {
+
             System.out.println("Your number is Even");
+        }
 
 
         if
-            ((userNum % 2 == 0) && ((userNum > 60)))
-            System.out.println("Your number is even and greater than 60");
+                ((userNum % 2 == 0) && ((userNum > 60))) {
 
-        else if ((userNum % 2 != 0) && ((userNum > 60)))
             System.out.println("Your number is even and greater than 60");
+        }
 
-        else {
-            System.out.println("You entered: " + userNum + " which is an Odd number." );
+
+        if ((userNum % 2 != 0) && ((userNum > 60))) {
+
+            System.out.println("Your number is odd and greater than 60");
+        }
         }
 
     }
 
-    }
